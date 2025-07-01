@@ -1,0 +1,14 @@
+---
+interface Props {
+  error: unknown;
+}
+
+const { error } = Astro.props;
+
+import Layout from "../layouts/Layout.astro";
+import Nav from "../components/Nav.astro";
+---
+<Layout>
+    <Nav />
+    <div class="text-text dark:text-dark-text text-2xl font-medium text-center mt-20">{error instanceof Error ? error.message : "Unknown error"}<br>Please visit <a href="/" class="font-bold underline">Home</a>.</div>
+</Layout>
