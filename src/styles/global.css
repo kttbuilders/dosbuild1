@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+/*  --color-primary: #356859;   /* Deep Teal Green */
+/*  --color-secondary: #FD5523; /* Soft Orange */
+/*  --color-accent: #F7C59F;    /* Warm Beige */
+/*  --color-bg: #FAF9F6;        /* Off-white background */
+/*  --color-text: #1B1B1E;      /* Charcoal text */
+/*  --color-dark-primary: #2E4E45;    /* Darker Teal */
+/*  --color-dark-secondary: #FF7847;  /* Brighter Orange */
+/*  --color-dark-accent: #DAB892;     /* Deeper Beige */
+/*  --color-dark-bg: #121212;         /* Very dark background */
+/*  --color-dark-text: #EAEAEA;       /* Light text */
+/**/
+
+--color-primary: #2F5D50;        /* Rich Teal */
+--color-secondary: #FF6B3B;      /* Vibrant Coral */
+--color-accent: #EFCDA7;         /* Soft Apricot */
+--color-bg: #F5F3EF;             /* Light Cream */
+--color-text: #1A1A1A;           /* Deep Charcoal */
+
+--color-dark-primary: #24443A;   /* Deep Forest Teal */
+--color-dark-secondary: #FF8C5C; /* Soft Tangerine */
+--color-dark-accent: #C7A77E;    /* Warm Sandstone */
+--color-dark-bg: #1A1A1A;        /* True Black */
+--color-dark-text: #F0F0F0;      /* Soft White */
+
+--color-title: #42428a;
+}

@@ -1,0 +1,40 @@
+---
+const currentPath = Astro.url.pathname;
+---
+<header class="w-full bg-bg text-text border-b border-accent px-4 py-3">
+  <div class=" mx-auto flex flex-wrap items-center justify-between">
+
+    <a href="/" class="w-1/3 sm:w-auto flex-shrink-0">
+      <img src="/favicon.png" alt="Logo" class="rounded-full h-10 sm:h-12 object-contain" />
+    </a>
+
+    <div class="w-full sm:w-auto order-2 sm:order-2 text-center flex-grow sm:flex-grow-0 mt-2 sm:mt-0">
+      <h1 class="text-3xl sm:text-4xl font-bold text-title font-[Montserrat]">
+        KISHALAYA TARUNTIRTHA
+      </h1>
+    </div>
+
+    <nav class="w-full sm:w-auto flex justify-center sm:justify-end gap-6 mt-3 sm:mt-0 order-3 sm:order-3 text-lg font-semibold">
+      <a 
+        href="/" 
+        class={`transition hover:text-secondary ${currentPath === '/' ? 'text-secondary underline underline-offset-4' : ''}`}
+      >Home</a>
+    
+      <a 
+        href="/about" 
+        class={`transition hover:text-secondary ${currentPath === '/about' ? 'text-secondary underline underline-offset-4' : ''}`}
+      >About</a>
+    
+      <a 
+        href="/activities" 
+        class={`transition hover:text-secondary ${currentPath === '/activities' ? 'text-secondary underline underline-offset-4' : ''}`}
+      >Activities</a>
+    
+      <a 
+        href="/contact" 
+        class={`transition hover:text-secondary ${currentPath === '/contact' ? 'text-secondary underline underline-offset-4' : ''}`}
+      >Contact</a>
+    </nav>
+
+  </div>
+</header>

@@ -1,0 +1,32 @@
+---
+import "../styles/global.css";
+
+// On page load or when changing themes, best to add inline in `head` to avoid FOUC
+/*document.documentElement.classList.toggle(
+	  "dark",
+      localStorage.theme === "dark" ||
+		    (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches),
+		);
+			// Whenever the user explicitly chooses light mode
+		localStorage.theme = "light";
+			// Whenever the user explicitly chooses dark mode
+		localStorage.theme = "dark";
+			// Whenever the user explicitly chooses to respect the OS preference
+		localStorage.removeItem("theme");
+*/
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>KTT</title>
+
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+	</head>
+	<body class="bg-bg dark:bg-dark-bg">
+		<slot />
+	</body>
+</html>
